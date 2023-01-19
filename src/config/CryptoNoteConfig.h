@@ -2,6 +2,7 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2019, The TurtleCoin Developers
+// Copyright (c) 2018-2023, The BratwurstCoin Developers.
 //
 // Please see the included LICENSE file for more information.
 
@@ -286,7 +287,7 @@ namespace CryptoNote
 
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "DeroGold";
+    const char CRYPTONOTE_NAME[] = "BratwurstCoin";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
@@ -323,7 +324,7 @@ namespace CryptoNote
 
     const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 100;
 
-    const int P2P_DEFAULT_PORT = 42069;
+    const int P2P_DEFAULT_PORT = 12742;
 
     const int RPC_DEFAULT_PORT = 6969;
 
@@ -379,9 +380,7 @@ namespace CryptoNote
         {0x20, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20}};
 
     const char* const SEED_NODES[] = {
-        "195.154.81.135:12169", // bob bie
-        "176.9.124.189:42069", // Pluto
-        "89.203.235.107:42069", // CuéeBits
-        "46.214.70.196:42069", // derogold4ever.online
+        "45.32.161.92:12742", // Node1
+        "45.77.93.227:12742"  // Node2
     };
 } // namespace CryptoNote
