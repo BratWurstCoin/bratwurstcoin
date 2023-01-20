@@ -39,7 +39,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 8411;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x73d0;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 120;
 
@@ -66,7 +66,7 @@ namespace CryptoNote
         const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT = 700000;
 
         const char GENESIS_COINBASE_TX_HEX[] =
-            "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
+            "017801ff0001dfc9b7b804029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101c7fe055e5165e088b9fae4a55711076b8ca03f55365b3a5cc2af00a3e1d73b99";
 
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
@@ -75,7 +75,7 @@ namespace CryptoNote
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1545261161;
+        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1674163287;
 
         const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
 
@@ -326,9 +326,9 @@ namespace CryptoNote
 
     const int P2P_DEFAULT_PORT = 12742;
 
-    const int RPC_DEFAULT_PORT = 6969;
+    const int RPC_DEFAULT_PORT = 4242;
 
-    const int SERVICE_DEFAULT_PORT = 1337;
+    const int SERVICE_DEFAULT_PORT = 4200;
 
     const size_t P2P_LOCAL_WHITE_PEERLIST_LIMIT = 1000;
 
@@ -377,7 +377,7 @@ namespace CryptoNote
     const std::string LICENSE_URL = "https://github.com/derogold/derogold/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0x20, 0x69, 0x6e, 0x73, 0x74, 0x61, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x20}};
+        {0x22, 0x69, 0x6e, 0x73, 0x74, 0x42, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x42}};
 
     const char* const SEED_NODES[] = {
         "45.32.161.92:12742", // Node1
