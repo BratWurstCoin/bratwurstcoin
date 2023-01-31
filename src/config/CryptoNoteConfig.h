@@ -75,7 +75,7 @@ namespace CryptoNote
         /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
            You can get this value by doing "print_block 2" in TurtleCoind. It is used to know what timestamp
            to import from when the block height cannot be found in the node or the node is offline. */
-        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1674163287;
+        const uint64_t GENESIS_BLOCK_TIMESTAMP = 1674183636;
 
         const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
 
@@ -233,28 +233,11 @@ namespace CryptoNote
 
         /* Block heights we are going to have hard forks at */
         const uint64_t FORK_HEIGHTS[] = {
-            700000, // 0
-            1470000, // 1
-            1980000, // 2
-	    2325000, // 3
-	    2361823, // 4
-	    2370000, // 5
-	    2420000, // 6
-	    2450000, // 7
-            2480000, // 8
-            2500000, // 9
-            2517000, // 10
-            3000000, // 11
-            3500000, // 12
-            4000000, // 13
-            4500000, // 14
-            5000000, // 15
-            5500000, // 16
-            6000000, // 17
+            
         };
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 10;
+        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 0;
 
         const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -377,7 +360,7 @@ namespace CryptoNote
     const std::string LICENSE_URL = "https://github.com/derogold/derogold/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0x22, 0x69, 0x6e, 0x73, 0x74, 0x42, 0x6c, 0x6c, 0x20, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x42}};
+        {0x22, 0x69, 0x6e, 0x73, 0x74, 0x42, 0x6c, 0x6c, 0x21, 0x67, 0x65, 0x6e, 0x74, 0x6f, 0x6f, 0x42}};
 
     const char* const SEED_NODES[] = {
         "45.32.161.92:12742", // Node1
