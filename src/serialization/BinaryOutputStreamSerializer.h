@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include <limits>
 #include "ISerializer.h"
 #include "SerializationOverloads.h"
 #include "common/IOutputStream.h"
