@@ -11,6 +11,7 @@
 
 #include <common/IOutputStream.h>
 #include <vector>
+#include <limits>
 
 namespace CryptoNote
 {
